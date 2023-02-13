@@ -1,0 +1,48 @@
+button{
+  height: 30px;
+  border-radius: 10px;
+  border-width: 2px;
+  margin: 10px;
+}
+
+button:hover{
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.row-container{
+  display: flex;
+  gap: 0px 0px;
+}
+
+.square{
+  height: auto;
+  flex: 1 0 0px;
+}
+
+.square:before{
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.selected{
+  background-color:rgba(50, 147, 211, 0.445);
+}
+
+#main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#canvas-container{
+  height: 25vw;
+  width: 25vw;
+  border: solid;
+}
+
+#buttons-container{
+  display: flex;
+  padding: 10px;
+}
